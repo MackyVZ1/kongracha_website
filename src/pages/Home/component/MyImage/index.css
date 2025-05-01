@@ -1,0 +1,8 @@
+.image-fading {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 75%,
+    transparent
+  );
+}
