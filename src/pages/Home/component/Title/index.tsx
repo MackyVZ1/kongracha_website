@@ -10,7 +10,7 @@ const Title = () => {
   return (
     <>
       {/**Mobile */}
-      <div className='relative flex flex-col justify-center h-screen items-center gap-4 overflow-hidden sm:hidden'>
+      <div className='relative flex flex-col justify-center h-screen items-center gap-4 sm:hidden'>
         <TaxText />
         <HealthText />
         <InsuranceText />
