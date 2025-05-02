@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const EnterButton = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const nav = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,6 +20,7 @@ const EnterButton = () => {
           ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
           }`}
+        onClick={() => nav('/mainpage')}
       >
         เข้าสู่เว็บไซต์
       </button>
