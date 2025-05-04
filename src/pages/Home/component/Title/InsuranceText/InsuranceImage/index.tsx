@@ -1,4 +1,4 @@
-import insuranceImg from '../../../../../../assets/insurance-svgrepo-com.svg';
+import insuranceImg from '../../../../../../assets/svg/insurance-svgrepo-com.svg';
 
 const Insurance = () => {
   return (

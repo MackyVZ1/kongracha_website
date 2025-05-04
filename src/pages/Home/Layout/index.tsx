@@ -9,7 +9,7 @@ const HomeLayout = ({ imgSrc, children }: Props) => {
       <img
         src={imgSrc}
         alt='backgroundImage'
-        className='absolute w-full h-full object-cover '
+        className='absolute w-full h-full object-cover p-0 m-0'
       />
       {children}
     </>

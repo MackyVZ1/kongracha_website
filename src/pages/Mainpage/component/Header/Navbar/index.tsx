@@ -5,6 +5,8 @@ import Travel from './Travel';
 import Work from './Work';
 import Contact from './Contact';
 import Name from './Name';
+import NameMobile from './NameMobile';
+import { Divider } from 'antd';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -16,10 +18,13 @@ const Navbar = () => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex items-center w-full h-16 bg-[#314D75] border-b-4 border-white sm:hidden'>
+      <div className='flex items-center w-full h-16 bg-[#314D75] border-b-4 border-white gap-14 sm:hidden'>
         <button className='pl-2 cursor-pointer' onClick={handleClick}>
           <Hamburger />
         </button>
+        <div className='flex'>
+          <NameMobile />
+        </div>
       </div>
 
       {/**Overlay when menu is open */}
@@ -47,6 +52,9 @@ const Navbar = () => {
             <Travel />
             <Work />
             <Contact />
+            <Divider
+              style={{ borderColor: '#314D75', marginTop: 300, borderWidth: 1 }}
+            />
           </div>
         </div>
       </div>

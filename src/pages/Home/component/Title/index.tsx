@@ -4,7 +4,7 @@ import HealthText from './HealthText';
 import InsuranceText from './InsuranceText';
 import EnterButton from '../Button';
 import MyImage from '../MyImage';
-import myImg from '../../../../assets/pbank_without_bg-Photoroom_new.png';
+import myImg from '../../../../assets/pbank/pbank_without_bg-Photoroom_new.png';
 
 const Title = () => {
   return (
