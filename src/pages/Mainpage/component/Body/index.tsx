@@ -1,8 +1,11 @@
-interface Props {
-  children: React.ReactNode;
-}
-const Body = ({ children }: Props) => {
-  return <div>{children}</div>;
+import ImageSlideshow from './component/ImageSlideshow';
+
+const Body = () => {
+  return (
+    <div className='flex'>
+      <ImageSlideshow />
+    </div>
+  );
 };
 
 export default Body;
