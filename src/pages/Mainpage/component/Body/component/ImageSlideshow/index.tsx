@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'antd';
+import type { CarouselProps } from 'antd';
 import imgSlide1 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_2.jpg';
 import imgSlide2 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_6.jpg';
 import imgSlide3 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_28.jpg';
@@ -49,7 +50,7 @@ const ImageSlideshow = () => {
   }, []);
 
   // ตั้งค่าสำหรับ Carousel
-  const carouselSettings = {
+  const carouselSettings: CarouselProps = {
     autoplay: true,
     effect: 'scrollx',
     dots: false, // ซ่อนจุดนำทางในโหมด desktop
@@ -67,7 +68,7 @@ const ImageSlideshow = () => {
 
   return (
     <div className='m-0 w-full'>
-      <style jsx='true'>{`
+      <style>{`
         /* กำหนด CSS เพื่อลดช่องว่างระหว่างรูปภาพ */
         :global(.ant-carousel .slick-slide) {
           padding: 0 1px; /* ลดช่องว่างด้านข้างของแต่ละรูปเหลือเพียง 1px */

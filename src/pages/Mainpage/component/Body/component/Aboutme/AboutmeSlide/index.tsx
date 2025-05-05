@@ -1,4 +1,5 @@
 import { Carousel } from 'antd';
+import type { CarouselProps } from 'antd';
 import imgSlide1 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_20.jpg';
 import imgSlide2 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_24.jpg';
 import imgSlide3 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_22.jpg';
@@ -9,7 +10,7 @@ const AboutmeSlide = () => {
 
   const images = [...originImage, ...originImage, ...originImage];
 
-  const carouselSettings = {
+  const carouselSettings: CarouselProps = {
     autoplay: true,
     effect: 'fade',
     dots: false, // ซ่อนจุดนำทางในโหมด desktop
