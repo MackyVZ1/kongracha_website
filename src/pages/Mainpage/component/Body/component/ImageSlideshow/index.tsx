@@ -11,6 +11,9 @@ import imgSlide7 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About m
 import imgSlide8 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_19.jpg';
 import imgSlide9 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_11.jpg';
 import imgSlide10 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_21.jpg';
+import imgSlide11 from '../../../../../../assets/pbank/aboutme/p1.png';
+import imgSlide12 from '../../../../../../assets/pbank/aboutme/p2.png';
+import imgSlide13 from '../../../../../../assets/pbank/aboutme/p3.png';
 const ImageSlideshow = () => {
   // เก็บรายการรูปภาพที่จะแสดง
   const originalImages: string[] = [
@@ -24,6 +27,9 @@ const ImageSlideshow = () => {
     imgSlide8,
     imgSlide9,
     imgSlide10,
+    imgSlide11,
+    imgSlide12,
+    imgSlide13,
     // เพิ่มรูปภาพเพิ่มเติมที่นี่
   ];
 
