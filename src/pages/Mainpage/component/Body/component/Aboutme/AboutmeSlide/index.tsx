@@ -13,30 +13,33 @@ const AboutmeSlide = () => {
   const carouselSettings: CarouselProps = {
     autoplay: true,
     effect: 'fade',
-    dots: false, // ซ่อนจุดนำทางในโหมด desktop
+    dots: false,
     pauseOnHover: false,
     autoplaySpeed: 3000,
-    slidesToShow: 1, // แสดง 3 รูปพร้อมกันบน desktop, 1 รูปบน mobile
-    slidesToScroll: 1, // เลื่อนครั้งละ 1 รูป
+    slidesToShow: 1,
+    slidesToScroll: 1,
     infinite: true,
-    speed: 800, // ความเร็วในการเปลี่ยนรูป
-    cssEase: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)', // ทำให้การเลื่อนดูลื่นไหล
-    centerMode: false, // ปิด centerMode เพื่อลดช่องว่าง
-    centerPadding: '0', // ไม่มี padding สำหรับ centerMode
-    arrows: false, // ซ่อนปุ่มนำทางซ้าย-ขวา
+    speed: 800,
+    cssEase: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)',
+    centerMode: false,
+    centerPadding: '0',
+    arrows: false,
   };
+
   return (
-    <Carousel {...carouselSettings}>
-      {images.map((image, index) => (
-        <div key={index} className='flex justify-center items-center'>
-          <img
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className='w-full h-64 object-cover rounded-2xl'
-          />
-        </div>
-      ))}
-    </Carousel>
+    <div className='w-full '>
+      <Carousel {...carouselSettings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className='w-full h-72 object-cover rounded-2xl sm:w-72 sm:h-84 '
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

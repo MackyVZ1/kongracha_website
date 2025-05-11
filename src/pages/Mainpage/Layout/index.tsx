@@ -3,7 +3,7 @@ interface Props {
 }
 
 const MainpageLayout = ({ children }: Props) => {
-  return <div className='bg-[#314D75] w-full h-full absolute'>{children}</div>;
+  return <div className='bg-[#314D75] w-full h-auto absolute'>{children}</div>;
 };
 
 export default MainpageLayout;
