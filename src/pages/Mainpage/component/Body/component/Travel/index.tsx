@@ -2,7 +2,11 @@ import TitleDivider from '../TitleDivider';
 import TravelSlide from './TravelSlide';
 import { CSSProperties } from 'react';
 
-const Travel = () => {
+interface TravelProps {
+  sectionRef?: React.RefObject<HTMLDivElement>;
+}
+
+const Travel = ({ sectionRef }: TravelProps) => {
   const scrollbarHideStyles: CSSProperties = {
     // สำหรับ Firefox
     scrollbarWidth: 'none',
@@ -15,12 +19,25 @@ const Travel = () => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex flex-col gap-6'>
-        <div className='flex items-center'>
+      <div className='flex flex-col gap-6 md:hidden'>
+        <div className='flex items-center' ref={sectionRef}>
           <TitleDivider text='TRAVEL' />
         </div>
         <div
           className='w-full h-auto px-6 pb-8 overflow-x-scroll scroll-smooth'
+          style={scrollbarHideStyles}
+        >
+          <TravelSlide />
+        </div>
+      </div>
+
+      {/**Desktop */}
+      <div className='hidden md:flex flex-col'>
+        <div className='flex items-center' ref={sectionRef}>
+          <TitleDivider text='TRAVEL' />
+        </div>
+        <div
+          className='w-full h-auto px-12 pb-8 overflow-x-scroll scroll-smooth'
           style={scrollbarHideStyles}
         >
           <TravelSlide />

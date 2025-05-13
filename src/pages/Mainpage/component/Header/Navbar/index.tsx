@@ -8,7 +8,7 @@ import Name from './Name';
 import NameMobile from './NameMobile';
 import { Divider } from 'antd';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }: { onNavigate: (key: string) => void }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -18,14 +18,14 @@ const Navbar = () => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex items-center w-full h-16 bg-[#314D75] border-b-4 sticky z-30 top-0 border-white gap-14 sm:hidden'>
+      <div className='flex items-center w-full h-16 bg-[#314D75] border-b-4 sticky z-30 top-0 border-white  sm:hidden'>
         <button
           className='pl-2 cursor-pointer z-50 relative'
           onClick={handleClick}
         >
           <Hamburger />
         </button>
-        <div className='flex'>
+        <div className='flex p-auto m-auto'>
           <NameMobile />
         </div>
       </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         <div className='flex flex-col h-full'>
-          <div className='h-16 bg-white flex items-center justify-end px-4'>
+          <div className='h-16 bg-white flex items-center justify-end px-4 mt-6'>
             <button
               className='text-gray-400 text-xl font-bold cursor-pointer'
               onClick={handleClick}
@@ -45,13 +45,41 @@ const Navbar = () => {
               ✕
             </button>
           </div>
-          <div className='p-6 flex flex-col gap-6'>
-            <Aboutme />
-            <Travel />
-            <Work />
-            <Contact />
+          <div className='px-6 py-20 flex flex-col gap-6'>
+            <button
+              onClick={() => {
+                onNavigate('about');
+                setIsOpen(false);
+              }}
+            >
+              <Aboutme />
+            </button>
+            <button
+              onClick={() => {
+                onNavigate('travel');
+                setIsOpen(false);
+              }}
+            >
+              <Travel />
+            </button>
+            <button
+              onClick={() => {
+                onNavigate('work');
+                setIsOpen(false);
+              }}
+            >
+              <Work />
+            </button>
+            <button
+              onClick={() => {
+                onNavigate('contact');
+                setIsOpen(false);
+              }}
+            >
+              <Contact />
+            </button>
             <Divider
-              style={{ borderColor: '#314D75', marginTop: 300, borderWidth: 1 }}
+              style={{ borderColor: '#314D75', marginTop: 400, borderWidth: 1 }}
             />
           </div>
         </div>
@@ -69,10 +97,38 @@ const Navbar = () => {
       <div className='hidden sm:flex items-center justify-between w-full h-24 bg-[#314D75] border-b-4 border-white pr-4 lg:pr-8'>
         <Name />
         <div className='flex gap-6 lg:gap-8 xl:gap-12'>
-          <Aboutme />
-          <Travel />
-          <Work />
-          <Contact />
+          <button
+            onClick={() => {
+              onNavigate('about');
+              setIsOpen(false);
+            }}
+          >
+            <Aboutme />
+          </button>
+          <button
+            onClick={() => {
+              onNavigate('travel');
+              setIsOpen(false);
+            }}
+          >
+            <Travel />
+          </button>
+          <button
+            onClick={() => {
+              onNavigate('work');
+              setIsOpen(false);
+            }}
+          >
+            <Work />
+          </button>
+          <button
+            onClick={() => {
+              onNavigate('contact');
+              setIsOpen(false);
+            }}
+          >
+            <Contact />
+          </button>
         </div>
       </div>
     </>

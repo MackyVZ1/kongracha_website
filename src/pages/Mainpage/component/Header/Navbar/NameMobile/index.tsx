@@ -1,7 +1,7 @@
 const NameMobile = () => {
   return (
     <div>
-      <h1 className='font-en font-bold text-xl text-[#FFFFFF]'>
+      <h1 className='font-en font-bold text-lg text-[#FFFFFF]'>
         WATHEE KONGRACHA
       </h1>
     </div>

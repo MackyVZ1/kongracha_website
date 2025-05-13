@@ -2,7 +2,11 @@ import TitleDivider from '../TitleDivider';
 import WorkSlide from './WorkSlide';
 import { CSSProperties } from 'react';
 
-const Work = () => {
+interface WorkProps {
+  sectionRef?: React.RefObject<HTMLDivElement>;
+}
+
+const Work = ({ sectionRef }: WorkProps) => {
   const scrollbarHideStyles: CSSProperties = {
     // สำหรับ Firefox
     scrollbarWidth: 'none',
@@ -16,7 +20,7 @@ const Work = () => {
     <>
       {/**Mobile */}
       <div className='flex flex-col gap-6 sm:hidden'>
-        <div className='flex items-center'>
+        <div className='flex items-center' ref={sectionRef}>
           <TitleDivider text='WORK' />
         </div>
         <div

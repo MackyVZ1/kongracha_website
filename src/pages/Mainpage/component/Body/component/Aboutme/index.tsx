@@ -3,17 +3,23 @@ import TitleLeftDivider from '../TitleDivider/TitleLeft';
 import AboutmeDesc from './AboutmeDesc';
 import AboutmeSlide from './AboutmeSlide';
 
-const Aboutme = () => {
+interface AboutmeProps {
+  sectionRef?: React.RefObject<HTMLDivElement>;
+}
+
+const Aboutme = ({ sectionRef }: AboutmeProps) => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex flex-col gap-6 sm:hidden'>
-        <div className='flex items-center'>
-          <TitleDivider text='ABOUT ME' />
-        </div>
-        <div className='w-full h-auto bg-white p-6'>
-          <AboutmeSlide />
-          <AboutmeDesc />
+      <div ref={sectionRef}>
+        <div className='flex flex-col gap-6 sm:hidden'>
+          <div className='flex items-center'>
+            <TitleDivider text='ABOUT ME' />
+          </div>
+          <div className='w-full h-auto bg-white p-6'>
+            <AboutmeSlide />
+            <AboutmeDesc />
+          </div>
         </div>
       </div>
 
@@ -24,7 +30,7 @@ const Aboutme = () => {
         </div>
         <div className='px-10 flex '>
           <div className='w-full h-auto p-6 bg-white rounded-[36px]'>
-            <div className='flex justify-end items-center'>
+            <div className='flex  items-center'>
               <AboutmeSlide />
             </div>
           </div>

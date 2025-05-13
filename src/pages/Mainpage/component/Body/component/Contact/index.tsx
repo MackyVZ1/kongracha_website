@@ -1,12 +1,16 @@
 import TitleDivider from '../TitleDivider';
 import ContactDetail from './Detail';
 
-const Contact = () => {
+interface ContactProps {
+  sectionRef?: React.RefObject<HTMLDivElement>;
+}
+
+const Contact = ({ sectionRef }: ContactProps) => {
   return (
     <>
       {/**Mobile */}
       <div className='flex flex-col gap-6 sm:hidden'>
-        <div className='flex items-center'>
+        <div className='flex items-center' ref={sectionRef}>
           <TitleDivider text='CONTACT' />
         </div>
         <div className='w-full h-auto bg-white p-8 flex flex-col justify-center'>
