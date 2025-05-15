@@ -2,7 +2,6 @@ import img1 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_2505
 import img2 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_10.jpg';
 import img3 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_11.jpg';
 import img4 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_12.jpg';
-import img5 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_13.jpg';
 import img6 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_14.jpg';
 import img7 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_15.jpg';
 import img8 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_16.jpg';
@@ -33,10 +32,6 @@ const WorkSlide = () => {
     },
     {
       src: img4,
-      name: 1,
-    },
-    {
-      src: img5,
       name: 1,
     },
     {
@@ -97,7 +92,7 @@ const WorkSlide = () => {
     <div className='flex flex-row space-x-4 w-max gap-4'>
       {images.map((item, index) => (
         <div
-          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-64 h-96 '
+          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-84 h-98 md:w-128 md:h-106'
           key={index}
         >
           <div className='flex flex-col text-center h-full'>

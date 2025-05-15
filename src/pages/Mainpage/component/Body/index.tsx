@@ -4,8 +4,13 @@ import ImageSlideshow from './component/ImageSlideshow';
 import Travel from './component/Travel';
 import Work from './component/Work';
 import FadeInOnScroll from './component/FadeInScroll';
+import type { SectionRefs } from '../..';
 
-const Body = ({ sectionRefs }: any) => {
+interface BodyProps {
+  sectionRefs: SectionRefs;
+}
+
+const Body = ({ sectionRefs }: BodyProps) => {
   return (
     <div className='flex flex-col gap-6'>
       <ImageSlideshow />

@@ -7,8 +7,9 @@ import Contact from './Contact';
 import Name from './Name';
 import NameMobile from './NameMobile';
 import { Divider } from 'antd';
+import type { SectionKey } from '../../..';
 
-const Navbar = ({ onNavigate }: { onNavigate: (key: string) => void }) => {
+const Navbar = ({ onNavigate }: { onNavigate: (key: SectionKey) => void }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {

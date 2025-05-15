@@ -4,7 +4,7 @@ import AboutmeDesc from './AboutmeDesc';
 import AboutmeSlide from './AboutmeSlide';
 
 interface AboutmeProps {
-  sectionRef?: React.RefObject<HTMLDivElement>;
+  sectionRef?: React.RefObject<HTMLDivElement | null>;
 }
 
 const Aboutme = ({ sectionRef }: AboutmeProps) => {
@@ -24,13 +24,13 @@ const Aboutme = ({ sectionRef }: AboutmeProps) => {
       </div>
 
       {/**Desktop */}
-      <div className='hidden sm:flex flex-col'>
-        <div className='flex items-center pl-8'>
+      <div className='hidden sm:flex flex-col gap-6'>
+        <div className='flex items-center'>
           <TitleLeftDivider text='ABOUT ME' />
         </div>
         <div className='px-10 flex '>
           <div className='w-full h-auto p-6 bg-white rounded-[36px]'>
-            <div className='flex  items-center'>
+            <div className='flex'>
               <AboutmeSlide />
             </div>
           </div>

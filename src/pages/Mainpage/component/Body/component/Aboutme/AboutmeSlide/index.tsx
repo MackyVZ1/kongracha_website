@@ -1,7 +1,7 @@
 import { Carousel } from 'antd';
 import type { CarouselProps } from 'antd';
 import imgSlide1 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_20.jpg';
-import imgSlide2 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_24.jpg';
+import imgSlide2 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_28.jpg';
 import imgSlide3 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_22.jpg';
 import imgSlide4 from '../../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_17.jpg';
 

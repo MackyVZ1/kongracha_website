@@ -3,7 +3,7 @@ import WorkSlide from './WorkSlide';
 import { CSSProperties } from 'react';
 
 interface WorkProps {
-  sectionRef?: React.RefObject<HTMLDivElement>;
+  sectionRef?: React.RefObject<HTMLDivElement | null>;
 }
 
 const Work = ({ sectionRef }: WorkProps) => {
@@ -25,6 +25,19 @@ const Work = ({ sectionRef }: WorkProps) => {
         </div>
         <div
           className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll'
+          style={scrollbarHideStyles}
+        >
+          <WorkSlide />
+        </div>
+      </div>
+
+      {/**Desktop */}
+      <div className='hidden md:flex flex-col gap-6'>
+        <div className='flex items-center' ref={sectionRef}>
+          <TitleDivider text='WORK' />
+        </div>
+        <div
+          className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll scroll-smooth lg:px-12'
           style={scrollbarHideStyles}
         >
           <WorkSlide />

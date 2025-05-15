@@ -14,46 +14,46 @@ const ContactDetail = () => {
 
   return (
     <>
-      <div className='flex flex-col justify-center p-auto m-auto'>
-        <div className='flex items-center gap-4 pt-6'>
-          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center'>
+      <div className='flex flex-col justify-center p-auto m-auto gap-6 xl:flex-row xl:items-center xl:gap-22'>
+        <div className='flex items-center gap-4'>
+          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center lg:w-[52px] lg:h-[52px]'>
             <FacebookImg />
           </div>
           <a
             href='https://www.facebook.com/Wathee.kongracha.bank'
-            className='font-th font-medium text-[#314D75] text-[18px]'
+            className='font-th font-medium text-[#314D75] text-[18px] lg:text-[22px]'
           >
             วาที กองราชา
           </a>
         </div>
-        <div className='flex items-center gap-4 pt-6'>
-          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center'>
+        <div className='flex items-center gap-4 '>
+          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center lg:w-[52px] lg:h-[52px]'>
             <InstagramImg />
           </div>
           <a
             href='https://www.instagram.com/wathee_bank/'
-            className='font-en font-medium text-[#314D75] text-[18px]'
+            className='font-en font-medium text-[#314D75] text-[18px] lg:text-[22px]'
           >
             wathee_bank
           </a>
         </div>
-        <div className='flex items-center gap-4 pt-6'>
-          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center'>
+        <div className='flex items-center gap-4 '>
+          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center lg:w-[52px] lg:h-[52px]'>
             <TiktokImg />
           </div>
           <a
             href='https://www.tiktok.com/@watheeaiamdrt?is_from_webapp=1&sender_device=pc'
-            className='font-en font-medium text-[#314D75] text-[18px]'
+            className='font-en font-medium text-[#314D75] text-[18px] lg:text-[22px]'
           >
             watheeaiamdrt
           </a>
         </div>
-        <div className='flex items-center gap-4 pt-6'>
-          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center'>
+        <div className='flex items-center gap-4'>
+          <div className='bg-[#314D75] w-[42px] h-[42px] rounded-[36px] flex justify-center items-center lg:w-[52px] lg:h-[52px]'>
             <LineImg />
           </div>
           <a
-            className='font-en font-medium text-[#314D75] text-[18px]'
+            className='font-en font-medium text-[#314D75] text-[18px] lg:text-[22px]'
             onClick={handleLineClick}
           >
             Wathee_NT577

@@ -3,7 +3,6 @@ import { Carousel } from 'antd';
 import type { CarouselProps } from 'antd';
 import imgSlide1 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_2.jpg';
 import imgSlide2 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_6.jpg';
-import imgSlide3 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_28.jpg';
 import imgSlide4 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_9.jpg';
 import imgSlide5 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_4.jpg';
 import imgSlide6 from '../../../../../../assets/pbank/aboutme/LINE_ALBUM_About me_250504_7.jpg';
@@ -19,7 +18,6 @@ const ImageSlideshow = () => {
   const originalImages: string[] = [
     imgSlide1,
     imgSlide2,
-    imgSlide3,
     imgSlide4,
     imgSlide5,
     imgSlide6,
