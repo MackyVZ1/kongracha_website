@@ -19,28 +19,32 @@ const Travel = ({ sectionRef }: TravelProps) => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex flex-col gap-6 md:hidden'>
-        <div className='flex items-center' ref={sectionRef}>
-          <TitleDivider text='TRAVEL' />
-        </div>
-        <div
-          className='w-full h-auto px-6 pb-8 overflow-x-scroll scroll-smooth'
-          style={scrollbarHideStyles}
-        >
-          <TravelSlide />
+      <div ref={sectionRef}>
+        <div className='flex flex-col gap-6 md:hidden'>
+          <div className='flex items-center'>
+            <TitleDivider text='TRAVEL' />
+          </div>
+          <div
+            className='w-full h-auto px-6 pb-8 overflow-x-scroll scroll-smooth'
+            style={scrollbarHideStyles}
+          >
+            <TravelSlide />
+          </div>
         </div>
       </div>
 
       {/**Desktop */}
-      <div className='hidden md:flex flex-col gap-6'>
-        <div className='flex items-center' ref={sectionRef}>
-          <TitleDivider text='TRAVEL' />
-        </div>
-        <div
-          className='w-full h-auto px-6 pb-8 overflow-x-scroll scroll-smooth lg:px-12'
-          style={scrollbarHideStyles}
-        >
-          <TravelSlide />
+      <div ref={sectionRef}>
+        <div className='hidden md:flex flex-col gap-6'>
+          <div className='flex items-center' ref={sectionRef}>
+            <TitleDivider text='TRAVEL' />
+          </div>
+          <div
+            className='w-full h-auto px-6 pb-8 overflow-x-scroll scroll-smooth lg:px-12'
+            style={scrollbarHideStyles}
+          >
+            <TravelSlide />
+          </div>
         </div>
       </div>
     </>

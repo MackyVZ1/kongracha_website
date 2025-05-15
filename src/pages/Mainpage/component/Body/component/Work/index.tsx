@@ -19,28 +19,32 @@ const Work = ({ sectionRef }: WorkProps) => {
   return (
     <>
       {/**Mobile */}
-      <div className='flex flex-col gap-6 sm:hidden'>
-        <div className='flex items-center' ref={sectionRef}>
-          <TitleDivider text='WORK' />
-        </div>
-        <div
-          className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll'
-          style={scrollbarHideStyles}
-        >
-          <WorkSlide />
+      <div ref={sectionRef}>
+        <div className='flex flex-col gap-6 sm:hidden'>
+          <div className='flex items-center'>
+            <TitleDivider text='WORK' />
+          </div>
+          <div
+            className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll'
+            style={scrollbarHideStyles}
+          >
+            <WorkSlide />
+          </div>
         </div>
       </div>
 
       {/**Desktop */}
-      <div className='hidden md:flex flex-col gap-6'>
-        <div className='flex items-center' ref={sectionRef}>
-          <TitleDivider text='WORK' />
-        </div>
-        <div
-          className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll scroll-smooth lg:px-12'
-          style={scrollbarHideStyles}
-        >
-          <WorkSlide />
+      <div ref={sectionRef}>
+        <div className='hidden md:flex flex-col gap-6'>
+          <div className='flex items-center' ref={sectionRef}>
+            <TitleDivider text='WORK' />
+          </div>
+          <div
+            className='w-full h-auto px-6 pb-8 text-center overflow-x-scroll scroll-smooth lg:px-12'
+            style={scrollbarHideStyles}
+          >
+            <WorkSlide />
+          </div>
         </div>
       </div>
     </>
