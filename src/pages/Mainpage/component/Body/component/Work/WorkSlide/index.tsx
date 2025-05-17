@@ -1,13 +1,11 @@
-import img1 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_1.jpg';
+import img1 from '../../../../../../../assets/FinancialPyramidpng.png';
 import img2 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_10.jpg';
 import img3 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_11.jpg';
 import img4 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_12.jpg';
 import img6 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_14.jpg';
 import img7 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_15.jpg';
 import img8 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_16.jpg';
-import img9 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_17.jpg';
 import img11 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_19.jpg';
-import img12 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_20.jpg';
 import img13 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_2.jpg';
 import img14 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_3.jpg';
 import img16 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_5.jpg';
@@ -47,15 +45,7 @@ const WorkSlide = () => {
       name: 1,
     },
     {
-      src: img9,
-      name: 1,
-    },
-    {
       src: img11,
-      name: 1,
-    },
-    {
-      src: img12,
       name: 1,
     },
     {
@@ -92,7 +82,7 @@ const WorkSlide = () => {
     <div className='flex flex-row space-x-4 w-max gap-4'>
       {images.map((item, index) => (
         <div
-          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-84 h-98 md:w-128 md:h-106'
+          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-84 h-98 md:w-136 md:h-150'
           key={index}
         >
           <div className='flex flex-col text-center h-full'>

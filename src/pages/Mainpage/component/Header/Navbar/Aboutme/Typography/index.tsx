@@ -1,6 +1,6 @@
 const AboutmeText = () => {
   return (
-    <h1 className='font-en font-medium text-lg text-[#314D75] sm:text-white lg:text-xl'>
+    <h1 className=' hidden font-en font-medium text-lg text-white lg:text-xl sm:flex'>
       About me
     </h1>
   );

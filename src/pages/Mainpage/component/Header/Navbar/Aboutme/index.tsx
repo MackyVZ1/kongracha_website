@@ -1,10 +1,14 @@
 import AboutmeImage from './Image';
 import AboutmeText from './Typography';
 
-const Aboutme = () => {
+interface AboutmeProps {
+  active?: boolean;
+}
+
+const Aboutme = ({ active }: AboutmeProps) => {
   return (
     <div className='flex items-center gap-2 cursor-pointer transform transition-all duration-150 hover:opacity-70'>
-      <AboutmeImage />
+      <AboutmeImage active={active} />
       <AboutmeText />
     </div>
   );

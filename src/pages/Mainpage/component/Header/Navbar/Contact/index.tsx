@@ -1,10 +1,14 @@
 import ContactImage from './Image';
 import ContactText from './Typography';
 
-const Contact = () => {
+interface ContactProps {
+  active?: boolean;
+}
+
+const Contact = ({ active }: ContactProps) => {
   return (
     <div className='flex items-center gap-2 cursor-pointer transform transition-all duration-150 hover:opacity-70 '>
-      <ContactImage />
+      <ContactImage active={active} />
       <ContactText />
     </div>
   );

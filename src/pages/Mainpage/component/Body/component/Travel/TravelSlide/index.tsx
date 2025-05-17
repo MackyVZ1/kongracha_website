@@ -82,7 +82,7 @@ const TravelSlide = () => {
     <div className='flex flex-row space-x-4 w-max gap-4'>
       {travelImg.map((item, index) => (
         <div
-          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-84 h-96 md:w-128 md:h-106'
+          className='rounded-[36px] bg-[#EEEE] shadow-[0px_8px_4px_8px_rgb(255,255,255,0.36)] p-4 w-84 h-96 md:w-136 md:h-150'
           key={index}
         >
           <div className='flex flex-col text-center h-full'>

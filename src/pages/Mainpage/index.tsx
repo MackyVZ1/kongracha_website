@@ -17,8 +17,14 @@ const Mainpage = () => {
     contact: useRef<HTMLDivElement>(null),
   };
 
-  const scrollToSection = (key: keyof typeof sectionRefs) => {
-    sectionRefs[key]?.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (key: SectionKey) => {
+    console.log('SCROLL TO SECTION:', key);
+    const element = sectionRefs[key]?.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      console.log('Element position:', rect);
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
