@@ -13,6 +13,7 @@ import img17 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250
 import img18 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_7.jpg';
 import img19 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_8.jpg';
 import img20 from '../../../../../../../assets/pbank/work/LINE_ALBUM_My work_250504_9.jpg';
+import img21 from '../../../../../../../assets/pbank/work/S__108240900.jpg';
 
 const WorkSlide = () => {
   const images = [
@@ -76,6 +77,7 @@ const WorkSlide = () => {
       src: img20,
       name: 1,
     },
+    { src: img21, name: 1 },
   ];
 
   return (
